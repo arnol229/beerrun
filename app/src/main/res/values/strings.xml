@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Beer Run</string>
+    <string name="title_server_setup">Connect to Server</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
