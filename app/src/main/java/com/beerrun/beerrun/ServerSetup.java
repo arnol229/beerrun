@@ -42,9 +42,9 @@ public class ServerSetup extends Activity {
         @Override
         public void onClick(View arg0) {
             Intent intent = new Intent(getBaseContext(), Communicate.class);
-            intent.putExtra("port", editTextAddress
+            intent.putExtra("address", editTextAddress
                     .getText().toString());
-            intent.putExtra("address", Integer.parseInt(editTextPort
+            intent.putExtra("port", Integer.parseInt(editTextPort
                     .getText().toString()));
             startActivity(intent);
         }

@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#ff8eff69">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,26 +15,46 @@
         android:layout_weight="0.04"
         android:textAlignment="center" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_weight="0.04" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.22">
+        android:layout_height="wrap_content">
 
-        <TextView
+        <Space
+            android:layout_width="20px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24" />
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Send To Server:"
-            android:id="@+id/sendText"
-            android:layout_gravity="center_vertical" />
+            android:text="Send"
+            android:id="@+id/sendButton" />
 
-        <EditText
+        <Space
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:id="@+id/editText"
-            android:layout_weight="1" />
+            android:layout_height="match_parent"
+            android:layout_weight="0.21" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disconnect"
+            android:id="@+id/disconnectButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.18" />
     </LinearLayout>
 
     <TextView
